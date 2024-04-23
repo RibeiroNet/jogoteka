@@ -1,0 +1,32 @@
+Médico
+Professor
+Engenheiro
+Advogado
+Enfermeiro
+Programador de computador
+Arquiteto
+Contador
+Jornalista
+Designer gráfico
+Psicólogo
+Chef de cozinha
+Mecânico
+Eletricista
+Agricultor
+Policial
+Bombeiro
+Gerente de marketing
+Consultor financeiro
+Analista de sistemas
+Artista visual
+Dentista
+Terapeuta físico
+Fisioterapeuta
+Cientista de dados
+Piloto
+Escritor
+Fotógrafo
+Veterinário
+Empresário
+
+

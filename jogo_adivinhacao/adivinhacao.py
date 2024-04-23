@@ -29,7 +29,6 @@ def adivinhacao():
 
         if nível == 1:
             numero = int(input("Escolha um número de 1 a 10: "))
-            chances = 10
             chances -= 1
             if numero == aleatorio:
                 print("Você acertou, parabéns!")
@@ -51,7 +50,6 @@ def adivinhacao():
 
 
         if nível == 2:
-            chances = 10
             chances -= 1
             numero = int(input("Escolha um número de 1 a 20: "))
             if numero == aleatorio2:
@@ -73,7 +71,6 @@ def adivinhacao():
 
 
         if nível == 3:
-            chances = 5
             chances -= 1 
             numero = int(input("Escolha um número de 1 a 50: "))
             if numero == aleatorio3:
@@ -96,7 +93,6 @@ def adivinhacao():
 
 
         if nível == 4:
-            chances = 5
             chances -= 1
             numero = int(input("escolha um número de 1 a 100: "))
             if numero == aleatorio4:
