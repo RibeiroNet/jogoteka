@@ -28,7 +28,7 @@ if idade < 18:
     print("você não pode acessar a jogoteka. não volte mais!")
     exit()
 
-jogo_escolhido = int(input("Em qual jogo você gostaria de se aventurar?"))
+jogo_escolhido = int(input("Em qual jogo você gostaria de se aventurar?  "))
 
 if jogo_escolhido == 2:
    adivinhacao()
