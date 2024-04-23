@@ -1,6 +1,8 @@
-import os 
-os.system("cls")
 #desenvolvido por Neto Ribeiro#
+import os 
+from jogo_adivinhacao.adivinhacao import *
+os.system("cls")
+
 
 print('''
 ******************** SEJA BEM VINDO A ****************************** 
@@ -12,9 +14,10 @@ print('''
 ╚█████╔╝╚██████╔╝╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██╗██║  ██║
  ╚════╝  ╚═════╝  ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 ''')
+
 idade = int(input("qual sua idade?  "))
 if idade >= 18:
-   input('''escolha um jogo para se divertir:  
+   print('''escolha um jogo para se divertir. 
     1.Forca e Enforca 
     2.Jogo de Adivinhação makumbado
     3.Calculadora Mortal
@@ -24,5 +27,9 @@ if idade >= 18:
 if idade < 18:
     print("você não pode acessar a jogoteka. não volte mais!")
     exit()
-    
+
+jogo_escolhido = int(input("Em qual jogo você gostaria de se aventurar?"))
+
+if jogo_escolhido == 2:
+   adivinhacao()
 
