@@ -19,7 +19,7 @@ def adivinhacao():
 
     nível = int(input("Escolha um nível de difilcudade: "))
 
-    chances = 0
+    chances = 10
     aleatorio = random.randint (1,10)
     aleatorio2 = random.randint (1,20)
     aleatorio3 = random.randint (1,50)
@@ -30,7 +30,10 @@ def adivinhacao():
         if nível == 1:
             numero = int(input("Escolha um número de 1 a 10: "))
             chances = 10
-            chances -= 1 
+            chances -= 1
+            if numero == aleatorio:
+                print("Você acertou, parabéns!")
+                break
             if numero > aleatorio: 
                 print("Você errou, o número é menor.")
                 print(f"restam {chances} chances.")
@@ -43,11 +46,17 @@ def adivinhacao():
                 chances -= 2 
             if chances == 0:
                 print("VOCÊ PERDEU!")
+            
+
+
 
         if nível == 2:
             chances = 10
+            chances -= 1
             numero = int(input("Escolha um número de 1 a 20: "))
-            chances -= 1 
+            if numero == aleatorio2:
+                print("Você acertou, parabéns!")
+                break 
             if numero > aleatorio2: 
                 print("Você errou, o número é menor.")
                 print(f"restam {chances} chances.")
@@ -60,11 +69,16 @@ def adivinhacao():
                 chances -= 2 
             if chances == 0:
                 print("VOCÊ PERDEU!")
+            
+
 
         if nível == 3:
             chances = 5
-            numero = int(input("Escolha um número de 1 a 50: "))
             chances -= 1 
+            numero = int(input("Escolha um número de 1 a 50: "))
+            if numero == aleatorio3:
+                print("Você acertou, parabéns!")
+                break
             if numero > aleatorio3: 
                 print("Você errou, o número é menor.")
                 print(f"restam {chances} chances.")
@@ -75,20 +89,36 @@ def adivinhacao():
                 print("Você perdeu duas vida por digitar um número fora do jogo!")
                 print(f"restam {chances} chances.")
                 vezes -= 2
+            if chances == 0:
+                print("VOCÊ PERDEU!")
+            
+            
 
 
         if nível == 4:
+            chances = 5
+            chances -= 1
             numero = int(input("escolha um número de 1 a 100: "))
-            vezes = vezes + 1  
+            if numero == aleatorio4:
+                print("Você acertou, parabéns!")
+                break 
             if numero > aleatorio4: 
                 print("Você errou, o número é menor. ")
+                print(f"restam {chances} chances.") 
             if numero < aleatorio4:
                 print("Você errou, o número é maior.")  
+                print(f"restam {chances} chances.") 
             if numero > 100 or numero < 1:
                 print("Você perdeu duas vida por digitar um número fora do jogo!")
-                vezes = vezes + 1
+                print(f"restam {chances} chances.") 
+                chances -= 2
+            if chances == 0:
+                print("VOCÊ PERDEU!")
+             
+            
 
-        if vezes > 5:
+
+        if chances == 0:
             print('''
    ▄██████▄     ▄████████   ▄▄▄▄███▄▄▄▄      ▄████████       ▄██████▄   ▄█    █▄     ▄████████    ▄████████ 
   ███    ███   ███    ███ ▄██▀▀▀███▀▀▀██▄   ███    ███      ███    ███ ███    ███   ███    ███   ███    ███ 
@@ -101,7 +131,6 @@ def adivinhacao():
                                                                                                  ███    ███ 
 ''')
             break
-        if numero == aleatorio and vezes <= 5:
-            print("Você acertou, parabéns!")
-            break
 
+
+       
