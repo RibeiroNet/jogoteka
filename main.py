@@ -3,6 +3,7 @@ import os
 from jogo_adivinhacao.adivinhacao import *
 from jogo_forca.forca import * 
 from jogo_da_velha.velha import *
+from jogo_calculadora.calculadora import *
 
 
 os.system("cls")
@@ -40,3 +41,5 @@ if jogo_escolhido == 1:
    forca()
 if jogo_escolhido == 4:
    velhinha()
+if jogo_escolhido == 3:
+   calcular()
