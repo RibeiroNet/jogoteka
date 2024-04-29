@@ -10,9 +10,10 @@ def jokenpo():
 
 
     while True:
+        print("pressione 0 para sair.")
+    
     
         escolha = int(input("escolha pedra, papel ou tesoura:"))
-        
         escolhact = random.randint(1,3)
 
         if escolha == escolhact: 
@@ -32,3 +33,6 @@ def jokenpo():
             print ('escolhi papel. você ganhou! vamos de novo, JO KEN PO!')
         if escolha == 3 and escolhact == 1:
             print ('joguei pedra e venci sua tesoura. vamos de novo, JO KEN PO!')
+        if escolha == 0:
+            print('até a próxima!')
+            break
