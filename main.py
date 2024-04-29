@@ -4,6 +4,7 @@ from jogo_adivinhacao.adivinhacao import *
 from jogo_forca.forca import * 
 from jogo_da_velha.velha import *
 from jogo_calculadora.calculadora import *
+from jogo_jokenpo.jogo_jokenpo import *
 
 
 
@@ -28,10 +29,11 @@ while True:
       2.Jogo de Adivinhação makumbado
       3.Calculadora Mortal
       4.Jogo da Velha Maldito
+      5.Jokenpo assasino
             
    ''')
    if idade < 18:
-      print("você não pode acessar a jogoteka. não volte mais!")
+      print("você não pode acessar a jogoteka. não volte nunca mais!")
       exit()
 
    jogo_escolhido = int(input("Em qual jogo você gostaria de se aventurar?  "))
@@ -44,3 +46,5 @@ while True:
       velhinha()
    if jogo_escolhido == 3:
       calcular()
+   if jogo_escolhido == 5:
+      jokenpo()
