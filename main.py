@@ -30,6 +30,7 @@ while True:
       3.Calculadora Mortal
       4.Jogo da Velha Maldito
       5.Jokenpo assasino
+      0.sair
             
    ''')
    if idade < 18:
@@ -48,3 +49,6 @@ while True:
       calcular()
    if jogo_escolhido == 5:
       jokenpo()
+   if jogo_escolhido == 0:
+      print('tudo bem, viajante. te vejo numa próxima noite sangrenta...')
+      break
