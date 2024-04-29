@@ -1,0 +1,1 @@
+print('olá! seja bem vindo ao jokenpô.')
