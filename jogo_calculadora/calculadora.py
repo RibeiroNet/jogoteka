@@ -8,39 +8,39 @@ def calcular():
 
         if operacao == 1:
             resul = numero1 + numero2
-            rep = int(input(f"qual a resposta de {numero1} + {numero2}?: "))
-            if rep == resul:
-                print("PARABENS VOCE ACERTOU")
+            resp = int(input(f"qual a resposta de {numero1} + {numero2}?: "))
+            if resp == resul:
+                print("está correto. parabéns. ")
                 break
-            if rep != resul:
-                print("NAOOO VOCE ERROU, tente de novo")
+            if resp != resul:
+                print("Você errou. tente novamente.")
         
         
         if operacao == 2:
             resul = numero1 - numero2
-            rep = int(input(f"qual a resposta de {numero1} - {numero2}?: "))
-            if rep == resul:
-                print("PARABENS VOCE ACERTOU")
+            resp = int(input(f"qual a resposta de {numero1} - {numero2}?: "))
+            if resp == resul:
+                print("está correto. parabéns.")
                 break
-            if rep != resul:
-                print("NAOOO VOCE ERROU, tente de novo")
+            if resp != resul:
+                print("Você errou. tente novamente.")
         
         
         if operacao == 3:
             resul = numero1 * numero2
-            rep = int(input(f"qual a resposta de {numero1} X {numero2}?: "))
-            if rep == resul:
-                print("PARABENS VOCE ACERTOU")
+            resp = int(input(f"qual a resposta de {numero1} X {numero2}?: "))
+            if resp == resul:
+                print("está correto. parabéns.")
                 break
-            if rep != resul:
-                print("NAOOO VOCE ERROU, tente de novo")
+            if resp != resul:
+                print("Você errou. tente novamente.")
         
         
         if operacao == 4:
             resul = numero1 / numero2
-            rep = float(input(f"qual a resposta de {numero1} / {numero2}?: "))
-            if rep == resul:
-                print("PARABENS VOCE ACERTOU")
+            resp = float(input(f"qual a resposta de {numero1} / {numero2}?: "))
+            if resp == resul:
+                print("está correto. parabéns.")
                 break
-            if rep != resul:
-                print("NAOOO VOCE ERROU, tente de novo")
+            if resp != resul:
+                print("Você errou. tente novamente.")
