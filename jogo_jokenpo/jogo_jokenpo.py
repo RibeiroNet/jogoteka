@@ -16,16 +16,16 @@ while True:
         print ('empatamos, vamos de novo. JO KEN PO!')
 
     if escolha == 1 and escolhact == 2:
-        print ('papel venceu a pedra, vamos de novo. JO KEN PO!')
+        print ('joguei papel e venci sua pedra. vamos de novo, JO KEN PO!')
     if escolha == 1 and escolhact == 3:
-        print ('pedra venceu tesoura, vamos de novo. JO KEN PO!')
+       print ('escolhi tesoura. você ganhou! vamos de novo, JO KEN PO!')
 
     if escolha == 2 and escolhact == 1:
-        print ('papel venceu a pedra, vamos de novo. JO KEN PO!')
+        print ('escolhi pedra. você ganhou! vamos de novo, JO KEN PO!')
     if escolha == 2 and escolhact == 3:
-        print ('tesoura venceu papel, vamos de novo. JO KEN PO!')
+        print ('joguei tesoura e venci seu papel. vamos de novo, JO KEN PO!')
 
     if escolha == 2 and escolhact == 1:
-        print ('pedra venceu a tesoura, vamos de novo. JO KEN PO!')
+       print ('escolhi pedra. você ganhou! vamos de novo, JO KEN PO!')
     if escolha == 2 and escolhact == 2:
-        print ('tesoura venceu papel, vamos de novo. JO KEN PO!')
+       print ('joguei tesoura e venci seu papel. vamos de novo, JO KEN PO!')
